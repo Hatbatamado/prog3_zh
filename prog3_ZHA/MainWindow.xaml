@@ -1,0 +1,19 @@
+﻿<Window x:Class="prog3_ZHA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Beteglista" Height="350" Width="525">
+    <Grid>
+        <Label Content="Betegek:" HorizontalAlignment="Left" Margin="30,19,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="betegek" HorizontalAlignment="Left" Height="247" Margin="30,50,0,0" VerticalAlignment="Top" Width="271" ItemsSource="{Binding Betegek}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Nev}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button Content="Új beteg..." HorizontalAlignment="Left" Margin="336,58,0,0" VerticalAlignment="Top" Width="146" Click="Button_Click"/>
+        <Button Content="Adatok módosítása" HorizontalAlignment="Left" Margin="336,83,0,0" VerticalAlignment="Top" Width="146" Click="Button_Click_1"/>
+        <Button Content="Kezelés..." HorizontalAlignment="Left" Margin="336,245,0,0" VerticalAlignment="Top" Width="146" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>

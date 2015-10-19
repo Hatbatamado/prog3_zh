@@ -1,0 +1,41 @@
+﻿<Window x:Class="prog3_ZHA.KezelesW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prog3_ZHA"
+        mc:Ignorable="d"
+        Title="KezelesW" Height="484.621" Width="300">
+    <Grid>
+        <Grid.Resources>
+            <local:TAJConverter x:Key="TajKonvert" />
+        </Grid.Resources>
+        <Label x:Name="label" Content="Beteg neve:" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="{Binding Nev}" HorizontalAlignment="Left" Margin="96,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Életkor:" HorizontalAlignment="Left" Margin="19,36,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="{Binding Eletkor}" HorizontalAlignment="Left" Margin="96,36,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="TAJ szám:" HorizontalAlignment="Left" Margin="19,67,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="{Binding TAJSzam, Converter={StaticResource TajKonvert}}" HorizontalAlignment="Left" Margin="96,0,0,356" VerticalAlignment="Bottom"/>
+        <Label x:Name="label6" Content="Régebbi kezelések:" HorizontalAlignment="Left" Margin="19,98,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="10,124,0,0" VerticalAlignment="Top" Width="272" ItemsSource="{Binding Kezelesek}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Content="{Binding BNOKod}"/>
+                        <Label Grid.Row="1" Content="{Binding Jegyzet}"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label x:Name="label7" Content="BNO kód:" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="BNOcomboBox" HorizontalAlignment="Left" Margin="76,243,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label8" Content="Jegyzet:" HorizontalAlignment="Left" Margin="19,281,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="106" Margin="11,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+        <Button x:Name="button" Content="Mentés" HorizontalAlignment="Left" Margin="107,424,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+
+    </Grid>
+</Window>

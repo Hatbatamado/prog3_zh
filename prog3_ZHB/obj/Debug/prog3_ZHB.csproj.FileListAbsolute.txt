@@ -1,0 +1,16 @@
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\bin\Debug\prog3_ZHB.exe.config
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\bin\Debug\prog3_ZHB.exe
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\bin\Debug\prog3_ZHB.pdb
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\MainWindow.g.cs
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\App.g.cs
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\prog3_ZHB_MarkupCompile.cache
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\prog3_ZHB_MarkupCompile.lref
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\MainWindow.baml
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\prog3_ZHB.g.resources
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\prog3_ZHB.Properties.Resources.resources
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\prog3_ZHB.csproj.GenerateResource.Cache
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\prog3_ZHB.exe
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\prog3_ZHB.pdb
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\KuldemenyAdatWindow.g.cs
+C:\Users\Nakia\Desktop\bot\prog3_ZHA\prog3_ZHB\obj\Debug\KuldemenyAdatWindow.baml

@@ -1,0 +1,41 @@
+﻿<Window x:Class="prog3_ZHB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prog3_ZHB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.Resources>
+            <local:ArConvert x:Key="ArKonvert"/>
+            <local:GrammConvert x:Key="GrammKonvert"/>
+            <local:MaxSzallitConvert x:Key="MaxKonvert"/>
+            <local:MinSzallitConver x:Key="MinKonvert"/>
+        </Grid.Resources>
+        <Label x:Name="label" Content="Szállítási mód:
+               " HorizontalAlignment="Left" Margin="25,18,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="238" Margin="25,49,0,0" VerticalAlignment="Top" Width="482" ItemsSource="{Binding FutarSzolg}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Width="455">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Content="{Binding Nev}" Background="Gray" Grid.Row="0"/>
+                        <Label Content="{Binding MinSzallitasNap, Converter={StaticResource MinKonvert}}" Grid.Row="1"/>
+                        <Label Content="{Binding MaxSzallitasNap, Converter={StaticResource MaxKonvert}}" Grid.Row="2"/>
+                        <Label Content="{Binding AlapAr, Converter={StaticResource ArKonvert}}" Grid.Row="3"/>
+                        <Label Content="{Binding GrammAr, Converter={StaticResource GrammKonvert}}" Grid.Row="4"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="button" Content="Küldemény..." HorizontalAlignment="Left" Margin="229,292,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="button_Click"/>
+
+    </Grid>
+</Window>
